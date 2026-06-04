@@ -370,9 +370,7 @@ document
   () => {
 
     // CORRECT ANSWERS
-    const answers = {
-
-      const answers = {
+const answers = {
   q1: "SP835A",
   q2: "SP431W/A",
   q3: "SP925A"
