@@ -501,15 +501,10 @@ XLSX.utils.book_append_sheet(
       // MISSED QUESTIONS
 
       const questionCounts = {
-
-        q1: 0,
-        q2: 0,
-        q3: 0,
-        q4: 0,
-        q5: 0,
-        q6: 0
-
-      };
+  q1: 0,
+  q2: 0,
+  q3: 0
+};
 
       gameResults.forEach(
         result => {
