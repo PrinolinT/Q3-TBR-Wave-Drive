@@ -369,6 +369,32 @@ document
   "click",
   () => {
 
+    // CHECK ALL QUESTIONS ANSWERED
+
+const requiredQuestions = [
+  "q1",
+  "q2",
+  "q3"
+];
+
+const unanswered =
+  requiredQuestions.filter(
+    question =>
+      !document.querySelector(
+        `input[name="${question}"]:checked`
+      )
+  );
+
+if (unanswered.length > 0) {
+
+  alert(
+    "Please answer all questions before submitting."
+  );
+
+  return;
+
+}
+
     // CORRECT ANSWERS
 const answers = {
   q1: "SP835A",
